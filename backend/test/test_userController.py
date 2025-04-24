@@ -1,5 +1,5 @@
 import pytest
-from unittest.mock import patch, MagicMock
+from unittest.mock import MagicMock
 from src.controllers.usercontroller import UserController
 
 class TestUserController:
