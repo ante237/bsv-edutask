@@ -142,11 +142,12 @@ describe('Adding todo', () => {
                     .get('.remover')
                     .click()
 
-                cy.wait('@deleteTodo').then((interception) => { 
-                    cy.contains('.todo-item', 'Watch video')
-                        .should('not.exist')
-                })  
-            })
+                })
+        cy.wait(2000)
+        cy.wait('@deleteTodo').then((interception) => { 
+            cy.contains('.todo-item', 'Watch video')
+                .should('not.exist')
+        })
     })
 
     afterEach(() => {
