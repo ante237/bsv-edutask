@@ -25,4 +25,4 @@ jobs:
 
       - name: Unit tests
         run:
-          python -m pytest backénd/test/test_userController.py
+          python -m pytest backend/test/test_userController.py
